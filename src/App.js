@@ -1,6 +1,5 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-// import Section from './components/section-feedback';
 import Options from './components/options/Options';
 import Notification from './components/notification/Notification';
 import Statistics from './components/statistics/Statistics';
@@ -33,7 +32,7 @@ function App() {
   }, [countGood, countBad, countNeutral, total]);
 
   return (
-    <section>
+    <section className="section">
       <h2>Leave feedback</h2>
       <Options
         onLeaveGoodFB={countGoodFB}
